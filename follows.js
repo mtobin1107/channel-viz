@@ -12,7 +12,7 @@
 		hideForm		= 0;
 	*/
 
-	var defaultKey		= '92HUr0pOawvhwV53z2IQ2cy76IHR5EZlMp2boCuf9yOC4hOX', // Unique master Xively API key to be used as a default
+	var defaultKey		= 'Br0RvunTQx9vRHkX6H2tPgZLfwNVXrZb68A6URkAgScPCv3n', // Unique master Xively API key to be used as a default
 		defaultFeeds	= [943063070], // Comma separated array of Xively Feed ID numbers
 		applicationName	= 'EMPI TENS Monitor', // Replaces Xively logo in the header
 		dataDuration	= '', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
