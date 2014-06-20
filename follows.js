@@ -15,8 +15,8 @@
 	var defaultKey		= 'a0P6pRdLk1rbUoYD6U07wf1iudaL3unNwlKEe6uSilYv9j5i', // Unique master Xively API key to be used as a default
 		defaultFeeds	= [1735160743], // Comma separated array of Xively Feed ID numbers
 		applicationName	= 'Tobin SensorTag Monitor', // Replaces Xively logo in the header
-		dataDuration	= '', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
-		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
+		dataDuration	= '5min', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
+		dataInterval	= 1, // Default interval for data to be displayed (in seconds)
 		dataColor		= '', // CSS HEX value of color to represent data (omit leading #)
 		hideForm		= 1; // To hide input form use value of 1, otherwise set to 0
 
@@ -83,7 +83,8 @@
 					var updated = new Date;
 					updated = updated.parseISO(datastream.at);
 					var diff = null;
-					if(duration == '6hours') diff = 300000;//21600000;
+					if(duration == '5min') diff = 300000;
+					if(duration == '6hours') diff = 21600000;
 					 if(duration == '1day') diff = 86400000;
 					 if(duration == '1week') diff = 604800000;
 					 if(duration == '1month') diff = 2628000000;
