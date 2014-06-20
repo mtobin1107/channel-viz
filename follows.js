@@ -12,9 +12,9 @@
 		hideForm		= 0;
 	*/
 
-	var defaultKey		= 'Br0RvunTQx9vRHkX6H2tPgZLfwNVXrZb68A6URkAgScPCv3n', // Unique master Xively API key to be used as a default
-		defaultFeeds	= [943063070], // Comma separated array of Xively Feed ID numbers
-		applicationName	= 'EMPI TENS Monitor', // Replaces Xively logo in the header
+	var defaultKey		= 'a0P6pRdLk1rbUoYD6U07wf1iudaL3unNwlKEe6uSilYv9j5i', // Unique master Xively API key to be used as a default
+		defaultFeeds	= [1735160743], // Comma separated array of Xively Feed ID numbers
+		applicationName	= 'Tobin SensorTag Monitor', // Replaces Xively logo in the header
 		dataDuration	= '', // Default duration of data to be displayed // ref: https://xively.com/dev/docs/api/data/read/historical_data/
 		dataInterval	= 0, // Default interval for data to be displayed (in seconds)
 		dataColor		= '', // CSS HEX value of color to represent data (omit leading #)
